@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Time-setter</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="outage">
+            <form action="updateDb.php" method="POST">
+                <p>Select Area: 
+                    <select name="ar_id">
+                        <option value='0'>--Select--</option>
+                        <option value='1'>Domlur</option>
+                        <option value='2'>Indiranagar</option>
+                        <option value='3'>Jeevanbheemanagar</option>
+                        <option value='4'>Malleswaram</option>
+                        <option value='5'>Krishnarajapuram</option>
+                        <option value='6'>Marathahalli</option>
+                        <option value='7'>Whitefield</option>
+                        <option value='8'>Lingarajapuram</option>
+                        <option value='9'>Ramamurthy Nagar</option>
+                        <option value='10'>Hebbal</option>
+                        <option value='11'>Jalahalli</option>
+                        <option value='12'>Mathikere</option>
+                        <option value='13'>Peenya</option>
+                        <option value='14'>R.T.Nagar</option>
+                        <option value='15'>Vidyaranyapura</option>
+                    </select>
+                </p>
+                <p><label for="from_datetime">Select from time:</label>
+                    <input id="from_datetime" type="datetime-local" name="from_datetime">
+                </p>
+                <p>
+                    <label for="to_datetime">Select to time:</label>
+                    <input id="to_datetime" type="datetime-local" name="to_datetime">
+                </p>
+                <p>
+                    <label for="reason">Reason:</label>
+                    <input type="text" id="reason" name="reason">
+                </p>
+                <p><input type="submit" id ="insb" value="Insert">
+                </p>
+            </form>
+        </div>
+        <div>
+            <a href="deactivate.php">click here</a> to deactivate running process...
+        </div>
+    </body>
+
+</html>
